@@ -1,0 +1,250 @@
+@media screen and (max-width: 1025px){
+    /* Quem Somos */
+    .fotos-quemSomos{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    /* footer */
+    .body-footer {
+        display: flex;
+        margin: 10px 50px;
+    }
+    .footer-footer {
+        padding: 0;
+        margin: 0 50px;
+    }
+    .info-footer:nth-child(2) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+    }
+    /* Reportagem */
+    .content p, .content .citacao{
+        min-width: 70%;
+    }
+     .info-graph, .w-65{
+        width: 80%;
+    }
+    .content-ilustracao{
+        width: 50%;
+    }
+    .subtitle_bloco, .content-graph,.content-img, #info-leticia{
+        width: 70%;
+    }
+    .content .video{
+        width: 100%;
+        margin: 0;
+    }
+    .content .video-solo{
+        width: 70%;
+    }
+    .icons{
+        right: 10px;
+    } 
+    .icons ul li{
+        margin-top: 24px;
+    }
+    .img-ester, .img-stephanie, .img-naomi,.img-leticia{
+        background-attachment: scroll;
+    }
+}
+@media screen and (max-width: 770px){
+    /* footer */
+    .body-footer {
+        display: flex;
+        margin: 10px 50px;
+    }
+    .footer-footer{
+        margin: 0 50px;
+        padding: 0;
+    }
+    .info-footer:nth-child(2) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+    }
+    /* quem Somos */
+    .fotos-quemSomos{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .card-foto-modal img{
+        margin-left: 20px;
+    }
+    .card-quemSomos{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .card-info p{
+        width: 100%;
+    }
+    .card-contact{
+        display: flex;
+        flex-direction: column;
+        min-width: 200px;
+    }
+    .card-icons{
+    margin-top: 10px;
+    }
+    /* Reportagem */
+    .capa h2{
+        font-size: 2rem;
+    }
+    .content p, .content .citacao{
+        min-width: 75%;
+    }
+    .content-ilustracao{
+        width: 60%;
+    }
+    .content-img, .subtitle_bloco,.info-graph, .content-graph, #info-leticia, .w-65{
+        width: 75%;
+    }
+    .content .video{
+        width: 100%;
+        margin: 0;
+    }
+    .content .video-solo{
+        width: 75%;
+    }
+    .video-solo iframe, .video iframe{
+        width: 974px;
+        height: 360px;
+    }
+    .icons{
+        right: 10px;
+    } 
+    .icons ul li{
+        margin-top: 24px;
+    }
+    .img-ester, .img-stephanie, .img-naomi,.img-leticia{
+        background-attachment: scroll;
+    }
+    .info-ste h4 {
+        font-size: 1.4rem;
+    }
+}
+@media screen and (max-width: 570px){
+    /* footer */
+    .body-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px 50px;
+    }
+    .info-footer{
+        width: 100%;
+    }
+    .footer-footer {
+        padding: 0;
+        margin: 0 50px;
+    }
+    .info-footer:nth-child(2) {
+        margin-top: 10px;
+    }
+    /* quem somos */
+    .fotos-quemSomos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .card-foto-modal img{
+        margin-left: 20px;
+    }
+    .card-quemSomos{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .card-info p{
+        width: 100%;
+    }
+    .card-contact{
+        display: flex;
+        flex-direction: column;
+        min-width: 200px;
+    }
+    .card-icons{
+    margin-top: 10px;
+    }
+    /* Reportagem */
+    #banner h1{
+        font-size: 3rem;
+        text-align: center;
+    }
+    .capa h2{
+        font-size: 2rem;
+    }
+    .content p, .content .citacao{
+        min-width: 85%;
+        padding: 0 10px;
+    }
+    .content .citacao{
+        margin: 40px 0;
+    }
+    .img-ester, .img-stephanie, .img-naomi,.img-leticia{
+        background-attachment: scroll;
+    }
+    .content-img, .info-graph, #info-leticia,.subtitle_bloco, .content-graph,.info-ste, .content-ilustracao, .w-65{
+        width: 80%;
+    }
+    .content .video{
+        width: 100%;
+        margin: 0;
+    }
+    .content .video-solo{
+        width: 82%;
+        margin: 20px 0;
+    }
+    .video-solo iframe, .video iframe{
+        width: 974px;
+        height: 256px;
+    }
+    .info-ste .canvas{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+    }
+    .icons{
+        right: 5px;
+    } 
+    .subtitle, .content .citacao{
+        font-size: 1.3rem;
+    }
+    .icons ul li, .icons ul li:hover {
+        height: 30px;
+        width: 30px;
+    }
+    .icons ul li{
+        margin-top: 24px;
+    }
+    .icons a, .icons a:hover{
+        padding-left: 5px;
+        padding-top: 0px;
+    }
+    .content p{
+        font-size: 1.2rem;
+    }
+    .subtitle_bloco p{
+        padding: 0;
+    }
+    .info-ste h4 {
+        font-size: 1.2rem;
+    }
+    #info-leticia h5 {
+        font-size: 0.8rem;
+        max-width: 90%;
+    }
+    #info-leticia h4 {
+        font-size: 1.5rem;
+    }
+}
+
+

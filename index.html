@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/media.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Candal&family=Noto+Sans+JP:wght@700;900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;0,700;0,800;0,900;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="./img/favicon.ico">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/emn178/chartjs-plugin-labels/src/chartjs-plugin-labels.js"></script>
+    <meta name="description" content="Polarização é como chamamos a disputa entre dois grupos que não dialogam entre si.Insatisfeitos, conectados e divididos, entenda porque a intensificação de atitudes radicais revela uma divisão presente muito além
+            das urnas " />
+    <meta name="keywords"
+        content="Polarização, Polarização Política, esquerda, direita, política, discussão politica, grupos distintos, ciber polarização, brasil dividido, consequiencias, fenomeno da polarização">
+    <meta name="author" content="Stephanie Fazio,Letícia Remonte,Ester Santana,Tifany Kimura,Lucas Campelo">
+    <title>Insatisfeitos, conectados e divididos: por dentro da polarização</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark cor">
+            <a class="navbar-brand ml-3">
+                <img src="./img/minilogo.png" class="d-inline-block align-top logo" alt="logo">
+
+            </a>
+        </nav>
+    </header>
+    <main>
+        <section class="capa" data-banner>
+            <div class="imageBanner img-banner">
+                <span>Reprodução: Danilo Fernandes</span>
+            </div>
+            <div class="capa-info">
+                <div class="capa-title">
+                    <div class="linha1"></div>
+                    <h2 class="title-banner">Insatisfeitos, conectados e divididos: por dentro da polarização
+                    </h2>
+                    <div class="linha1"></div>
+                    <h4 class="sub-banner">Entenda porque a intensificação de atitudes radicais revela uma divisão
+                        presente muito além
+                        das urnas</h4>
+                </div>
+            </div>
+
+        </section>
+        <!-- menu de icones (absolute) -->
+        <nav class="icons" data-menu>
+            <ul>
+                <li data-icons="first">
+                    <span>Dentro da Polarização</span>
+                    <a href="#first">
+                        <svg width="1.3em" height="1.3em" viewBox="0 -11 511.99833 511" width="511pt"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="m209.808594 349.476562 9.328125.300782c.222656.007812.421875.15625.492187.367187l4.050782 12.152344c1.320312 3.960937 5.601562 6.101563 9.5625 4.78125 3.960937-1.320313 6.101562-5.601563 4.78125-9.5625l-4.050782-12.148437c-2.0625-6.191407-7.828125-10.492188-14.351562-10.703126-9.207032-.296874-9.769532-.015624-9.847656-.789062l-5.707032-58.242188c-.765625-7.792968-7.195312-14.371093-16.433594-14.113281-.570312.011719-2.019531.054688-2.617187-.167969-.070313-.160156-7.027344-23.042968-7.078125-23.210937-1.484375-4.882813-5.265625-8.738281-10.109375-10.324219-39.972656-13.082031-31.445313-9.453125-45.792969-18.214844h-.003906c-.171875-.105468-.269531-.292968-.257812-.492187l.359374-6.089844c.6875-11.714843-11.265624-19.984375-21.972656-15.238281-19.183594 8.488281-27.476562 12.296875-29.742187 13.085938-12.925781-.832032-13.230469-.542969-13.257813-1.34375l-.074218-2.171876c-.171876-4.992187-2.75-9.644531-6.890626-12.4375-4.140624-2.796874-9.417968-3.445312-14.113281-1.738281-.160156.054688-.410156.050781-.589843-.152343l-20.234376-22.898438c-.132812-.148438-.171874-.355469-.105468-.539062l7.519531-21.0625c.066406-.179688.222656-.3125.40625-.351563l29.464844-5.785156c6.8125-1.339844 11.859375-6.878907 12.5625-13.789063 5.386719-53.140625 5.800781-38.421875-.316407-66.289062-.191406-.921875-.128906-.5625 20.253907-3.664063.1875-.023437.367187.042969.488281.179688l11.960938 13.734375c4.859374 5.582031 13.0625 6.988281 19.503906 3.355468l16.242187-9.160156c6.472657-3.652344 9.496094-11.425781 7.199219-18.488281l-5-15.363281c-.3125-.921875.054688-.636719 39.847656-7.269532.707032-.125-.128906-1.832031 11.738282 33.777344 2.578124 7.726563 10.503906 12.152344 18.429687 10.296875l21.195313-4.960937c7.804687-1.828125 11.328124-8.523438 11.976562-12.960938.367188-.59375-.59375-.566406 23.085938 5.933594 6.300781 1.730469 13.089843-.679688 16.886718-6l5.746094-8.042969c.261719-.371093.792969-.28125.945312.121094 13.230469 34.605469 12.761719 36.367187 19.625 39.796875l22.082032 11.042969c3.738281 1.871093 8.277344.355469 10.144531-3.378907 1.867187-3.734374.355469-8.277343-3.382813-10.144531-5.960937-2.980469-20.628906-10.316406-22.089843-11.046875-1.390625-2.523437-4.941407-12.539062-12.253907-31.667968-4.457031-11.652344-20.125-13.660157-27.371093-3.507813l-5.746094 8.042969c-.132813.183594-.367187.265625-.582031.207031l-22.480469-6.171875c-4.175781-1.144531-8.683594-.5-12.371094 1.773438-4.269531 2.636718-5.921875 6.015624-7.132812 10.257812 0 .367188-.144531.9375-.527344 1.027344-22.175781 5.1875-21.578125 5.367187-21.832031 4.605468l-11.140625-33.417968c-2.453125-7.359375-9.785157-11.773438-17.433594-10.496094l-39.421875 6.570312c-9.453125 1.574219-15.277344 11.195313-12.316406 20.296876l5 15.359374c.222656.6875.488281.222657-16.492188 9.800782-.222656.125-.503906.078125-.671875-.113282l-11.960937-13.738281c-3.539063-4.066406-8.835938-6.007812-14.164063-5.195312l-19.804687 3.011719c-4.265625.648437-8.113282 3.0625-10.554688 6.617187s-3.3125 8.011719-2.386718 12.222656l4.265624 19.433594c-.125 2.359375-1.1875 12.121094-4.226562 42.085937-.0625.625 1.546875.089844-29.898438 6.265626-5.386718 1.058593-9.878906 4.929687-11.730468 10.101562l-7.523438 21.0625c-1.914062 5.371094-.761718 11.363281 3.015625 15.636719l20.234375 22.902343c4.292969 4.851563 10.996094 6.5625 17.089844 4.347657.359375-.128907.710938.125.722656.488281l.078125 2.171875c.273438 8.082031 6.570313 14.570313 14.640625 15.085937 20.792969 1.34375 10.820313 3.628907 49.585938-13.527343.371094-.167969.785156.109375.757812.527343-.339844 5.78125-1.96875 14.839844 7.132813 20.382813l.011719-.019531-.011719.019531c16.164062 9.871094 6.3125 5.714844 48.957031 19.671875.164062.054688.296875.1875.347656.355469l6.992188 22.980469c2.609375 8.570312 9.277344 11.101562 18.011718 11.101562.761719 0 .183594-3.117188 6.25 58.726562.765626 7.800782 7.25 13.871094 15.082032 14.125zm0 0" />
+                            <path
+                                d="m458.164062 223.125c-22.335937 20.835938-23.28125 20.773438-24.585937 26.71875-9.523437 43.324219-12.617187 57.941406-13.511719 61.144531-.226562.324219-36.007812 51.910157-36.402344 51.941407-55.402343 4.265624-53.144531 3.203124-58.121093 7.582031-26.390625 23.011719-27.617188 22.839843-28.699219 29.941406-2.527344 16.617187-3.652344 25.167969-4.277344 27.503906 0 0-45.835937 46.445313-45.886718 46.496094-.210938.210937-.550782.214844-.761719.003906l-32.5-31.980469c-.769531-.746093-1.644531.5 33.078125-26.503906 5.167968-4.019531 7.285156-10.855468 5.320312-17.078125l-2.96875-10.933593c-1.09375-4.03125-5.246094-6.414063-9.277344-5.316407-4.03125 1.09375-6.410156 5.25-5.316406 9.277344.09375.339844 3.03125 11.183594 3.140625 11.519531.070313.214844 0 .453125-.179687.59375l-33.035156 25.695313c-7.472657 5.8125-8.113282 16.882812-1.371094 23.523437l32.5 31.980469c6.148437 6.050781 16.078125 5.976563 22.132812-.160156l45.875-46.484375c5.824219-5.90625 4.117188-11.886719 8.480469-35.878906 1.832031-2.042969 9.359375-8.320313 23.648437-20.777344 3.433594-.632813 17.15625-1.449219 49.375-3.929688 4.710938-.359375 8.957032-2.792968 11.652344-6.667968l36.03125-51.75c2.25-2.910157 1.550782-1.46875 15.839844-66.496094 1.550781-1.800782 8.007812-7.59375 20.132812-18.90625 3.054688-2.851563 3.21875-7.636719.371094-10.6875-2.847656-3.050782-7.628906-3.21875-10.683594-.371094zm0 0" />
+                            <path
+                                d="m508.21875 150.714844c-.933594-7.878906-7.621094-13.816406-15.550781-13.816406h-11.140625c-3.292969-2.21875-15.109375-12.644532-43.390625-36.707032-6.128907-5.214844-8.34375-3.839844-49.730469-1.835937-2.164062-.867188-9.859375-4.984375-26.46875-13.519531-3.710938-1.910157-8.269531-.445313-10.179688 3.269531-1.910156 3.710937-.445312 8.269531 3.269532 10.179687 29.332031 15.078125 28.742187 15.4375 34.105468 15.171875 25.03125-1.210937 35.667969-1.996093 39.230469-1.726562 45.0625 38.335937 45.59375 40.292969 52.445313 40.292969 11.957031-.003907 12.300781-.308594 12.394531.472656.046875.402344 3.800781 31.097656 3.511719 31.378906l-16.96875 16.78125c-4.820313 4.765625-1.378906 12.933594 5.3125 12.933594 4.082031 0 3.964844-.847656 22.285156-18.960938 2.957031-2.921875 4.652344-6.980468 4.652344-11.136718.003906-1.292969.21875.90625-3.777344-32.777344zm0 0" />
+                        </svg>
+                    </a>
+                </li>
+                <li data-icons="second">
+                    <span>Ondas e Marés</span>
+
+                    <a href="#second">
+                        <svg version="1.1" width="1em" height="1em" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 511.999 511.999"
+                            style="enable-background:new 0 0 511.999 511.999;" xml:space="preserve">
+                            <g>
+                                <g>
+                                    <path d="M495.307,381.298c-114.438,0-191.534-40.036-211.521-109.842c-14.42-50.363,6.178-99.952,33.53-117.013
+                           c9.403-5.865,15.116-6.181,26.167-6.676c11.62,0.977,23.612,6.895,35.565,17.684c23.37,21.094,21.555,68.579,20.355,100.001
+                           c-0.709,18.558-1.136,29.76,2.688,37.974c4.352,9.347,14.095,13.87,24.817,11.526c16.494-3.607,34.388-23.38,45.635-40.682
+                           c16.413-25.249,25.53-54.403,25.672-82.092c0.253-49.125-19.27-90.643-56.456-120.072c-33.283-26.34-79.406-41.097-129.866-41.553
+                           c-75.342-0.688-150.936,29.523-207.33,82.917C57.878,157.674,1.854,239.256,0.074,376.899
+                           c-0.442,34.159,1.304,64.259,0.025,86.923c-0.541,9.575,7.089,17.635,16.667,17.635c45.343,0,432.143,0,478.541,0
+                           c9.219,0,16.693-7.474,16.693-16.693v-66.773C512,388.771,504.526,381.298,495.307,381.298z M33.941,448.07
+                           c0.161-20.896-0.82-44.738-0.484-70.738C36.375,151.785,194.862,62.775,311.588,63.941
+                           c76.599,0.692,153.688,40.559,153.238,128.066c-0.181,35.454-18.502,64.534-32.244,79.544c0.059-1.638,0.12-3.264,0.18-4.824
+                           c1.438-37.633,3.61-94.507-31.347-126.059c-19.903-17.964-41.532-26.896-62.703-26.52c-42.838-0.798-84.421,9.68-120.629,30.512
+                           C144.699,186.884,99.782,266.662,99.995,349.464c0.088,34.017,7.893,67.617,22.754,98.606H33.941z M160.522,448.072
+                           c-46.355-79.502-31.447-174.296,28.317-238.241c-12.083,23.789-19.214,50.632-20.631,78.64
+                           c-2.277,45.006,10.352,88.689,35.56,123.002c10.433,14.202,22.717,26.44,36.615,36.599H160.522z M478.614,448.072h-149.97
+                           c-92.615-13.429-130.584-88.867-127.09-157.914c2.14-42.309,20.449-85.448,56.418-113.03
+                           c-14.106,32.67-15.843,70.123-6.282,103.521c11.047,38.582,36.493,71.112,73.586,94.077c39.377,24.377,90.901,37.707,153.339,39.7
+                           V448.072z" />
+                                </g>
+                            </g>
+                        </svg>
+
+                    </a>
+                </li>
+                <li data-icons="third">
+                    <span>Ciber Polarização</span>
+                    <a href="#third">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-display" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M5.75 13.5c.167-.333.25-.833.25-1.5h4c0 .667.083 1.167.25 1.5H11a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1h.75z" />
+                            <path fill-rule="evenodd"
+                                d="M13.991 3H2c-.325 0-.502.078-.602.145a.758.758 0 0 0-.254.302A1.46 1.46 0 0 0 1 4.01V10c0 .325.078.502.145.602.07.105.17.188.302.254a1.464 1.464 0 0 0 .538.143L2.01 11H14c.325 0 .502-.078.602-.145a.758.758 0 0 0 .254-.302 1.464 1.464 0 0 0 .143-.538L15 9.99V4c0-.325-.078-.502-.145-.602a.757.757 0 0 0-.302-.254A1.46 1.46 0 0 0 13.99 3zM14 2H2C0 2 0 4 0 4v6c0 2 2 2 2 2h12c2 0 2-2 2-2V4c0-2-2-2-2-2z" />
+                        </svg>
+                    </a>
+                </li>
+                <li data-icons="fourth">
+                    <span>Brasil Dividido</span>
+                    <a href="#fourth">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-signpost-split"
+                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7 16h2V6H8V2h1v-.586a1 1 0 0 0-2 0V7h1v4H7v5z" />
+                            <path fill-rule="evenodd"
+                                d="M14 3H8v2h6l.75-1L14 3zM8 2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h6a1 1 0 0 0 .8-.4l.975-1.3a.5.5 0 0 0 0-.6L14.8 2.4A1 1 0 0 0 14 2H8zM2 8h6v2H2l-.75-1L2 8zm6-1a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-.8-.4L.225 9.3a.5.5 0 0 1 0-.6L1.2 7.4A1 1 0 0 1 2 7h6z" />
+                        </svg>
+                    </a>
+                </li>
+                <li data-icons="fifth">
+                    <span>Conflito vs Confronto</span>
+                    <a href="#fifth">
+                        <svg width="1.0625em" height="1em" xlink:href="#second" viewBox="0 0 17 16"
+                            class="bi bi-exclamation-triangle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M7.938 2.016a.146.146 0 0 0-.054.057L1.027 13.74a.176.176 0 0 0-.002.183c.016.03.037.05.054.06.015.01.034.017.066.017h13.713a.12.12 0 0 0 .066-.017.163.163 0 0 0 .055-.06.176.176 0 0 0-.003-.183L8.12 2.073a.146.146 0 0 0-.054-.057A.13.13 0 0 0 8.002 2a.13.13 0 0 0-.064.016zm1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566z" />
+                            <path
+                                d="M7.002 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 5.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995z" />
+                        </svg>
+                    </a>
+                </li>
+                <li data-icons="sixth">
+                    <span>Quem Somos</span>
+                    <a href="quemSomos.html">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-card-text" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M14.5 3h-13a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z" />
+                            <path fill-rule="evenodd"
+                                d="M3 5.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 8a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 8zm0 2.5a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5z" />
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <article id="first" data-sessao="fisrt">
+            <div class="content">
+                <div class="subtitle_bloco">
+                    <h4 class="author">Por Lucas Campêlo</h4>
+                    <span class="data">30/11/2020 - 09:00</span>
+                </div>
+                <p>SÃO PAULO — Os traços econômicos das cidades brasileiras evidenciam profundas desigualdades que
+                    permeiam nosso
+                    cotidiano. Segundo pesquisa realizada pelo Instituto Brasileiro de Geografia e Estatística (IBGE),
+                    em 2019, um décimo da população brasileira concentrava 43% dos rendimentos financeiros mensais
+                    produzidos em todo país. César Sampaio, professor na rede pública estadual de São Paulo e
+                    historiador, declara que há um fosso econômico dividindo a sociedade brasileira. Para Daniel Gomes,
+                    doutor em história social pela Universidade de São Paulo (USP) e professor na Universidade de
+                    Brasília (UnB), as diferenças no Brasil vão além da questão econômica, alcançando fatores raciais e
+                    sociais como questões de gênero. </p>
+                <p>Segundo Daniel, existem momentos de crise em que essas desigualdades tornam-se notórias e impossíveis
+                    de serem ignoradas. “A crise é um momento crítico no qual as tensões ocultas da nossa sociedade
+                    tornam-se evidentes”, explica. O candidato a vereador em São Paulo pelo PSOL, Renato Assad, defende
+                    que é nesse período de crise e de desigualdades acirradas que o fenômeno conhecido como polarização
+                    ocorre. “Quando você tem uma crise, começam a aparecer contradições da vida cotidiana. Então, surge
+                    uma polarização acerca das interpretações da realidade que vão propor uma saída para a crise pela
+                    esquerda ou pela direita”, diz. </p>
+                <p>“Existem polarizações em diferentes intensidades, que podem levar a discussões saudáveis, guerras ou
+                    conflitos étnicos e sociais. Todas elas aparecem em períodos de crise”, defende Renato. Para ele, o
+                    nível de “barbárie” presente em uma sociedade define qual caminho a polarização irá seguir, seja o
+                    de aprimorar o debate democrático ou favorecer o extremismo.</p>
+                <figure class="content-ilustracao">
+                    <img src="./img/Lucas/ilustracao1.png" class="figure-img img-fluid justify-content-center "
+                        alt="Ilustração sobre polarização politica" data-toggle="modal" data-target="#desigualdade-1">
+                    <figcaption class="figure-caption">Créditos: Hoshi</figcaption>
+                </figure>
+                <p>“Ao mesmo tempo em que o debate de ideias é bom, ele pode nos levar a lugares errados”, declara o
+                    professor César Sampaio. Segundo ele, um tipo de debate marcado por oposição e adjetivação e a
+                    inexistência do diálogo são características comuns dos momentos de polarização. “Há épocas onde os
+                    partidos discutem em uma mesma linha, discordam em um ponto ou outro, mas a polaridade acontece
+                    quando há visões completamente opostas de projetos que nos levam a um ponto onde não há diálogo”.
+                </p>
+                <p>De acordo com a pesquisa <i>Satisfaction with Democracy</i>, realizada em 2019 pelo centro de
+                    investigação
+                    Pew Research Center, há um sentimento de descrença em relação ao poder da política e da democracia
+                    crescendo entre os cidadãos do Brasil. Segundo o levantamento, 56% dos brasileiros estão
+                    insatisfeitos com a forma pela qual a democracia funciona. Na média mundial, a porcentagem de
+                    pessoas insatisfeitas com o sistema também ultrapassa os 50%. "Há uma queda acentuada na crença do
+                    poder da política de transformar as coisas e uma insatisfação geral com o modelo político no mundo”,
+                    diz César. </p>
+                <p>Para Daniel Gomes, as sociedades tendem a reagir de forma semelhante durante os períodos de
+                    polarização. O professor enfatiza que outros grupos na história já optaram por flertar com
+                    raciocínios extremistas durante momentos de crise, seguindo pelo caminho da oposição arbitrária e
+                    negando saídas pelo diálogo ou por soluções democráticas. “Foi o caso da Itália de Mussolini e da
+                    Alemanha de Hitler, que na busca pelo fim do período de caos, apoiaram a ascensão do totalitarismo”,
+                    afirma. </p>
+                <div class="subtitle_bloco">
+                    <h3 class="subtitle">Caminhos no Brasil</h3>
+                </div>
+                <p>Segundo Daniel , há uma guerra de “nós contra eles” enraizada no Brasil muito antes das eleições dos
+                    governos petistas ou da ascensão do atual presidente Jair Bolsonaro, que são os protagonistas dos
+                    conflitos políticos dos últimos 20 anos. Gomes propõe a ideia de que existiram diferentes formatos
+                    de polarização no Brasil, como por exemplo, os confrontos ideológicos entre senhores e escravos no
+                    período colonial. “O que eu quero dizer é que o nós-contra-eles vem de muitos anos na história do
+                    nosso país". </p>
+                <p>Rosinei Naves, mestre em História Econômica pela USP e professora na Universidade São Judas Tadeu
+                    (USJT), afirma que a polarização brasileira é um fenômeno que pode ser notado desde os tempos do
+                    império e que as marcas profundas que vemos nos dias de hoje são resultado das diferenças e
+                    desigualdades que se difundiram desde então. “Uma das consequências mais predominantes é que, no
+                    Brasil, uma parte da sociedade se curvou a uma elite mundial e manteve a cultura escravocrata entre
+                    nós’, diz.</p>
+                <strong class="citacao">
+                    “Será que a polarização no Brasil foi inventada nos últimos vinte anos pelos políticos?” - Daniel
+                    Gomes
+                </strong>
+                <p>O professor César Sampaio defende que os conflitos que vivemos hoje derivam, em grande parte, de
+                    acontecimentos internacionais do século XX, como a Revolução Industrial, a Revolução Russa de 1917 e
+                    a Guerra Fria. A noção que as pessoas possuem hoje em dia sobre capitalistas, comunistas e
+                    socialistas (termos muito usados nos debates públicos) foi herdada destes momentos, conforme
+                    explica. “O que acontece hoje é praticamente um retorno às ideologias da Guerra Fria”. Até mesmo a
+                    pejoratividade e o preconceito existente a respeito destes termos é uma herança de conflitos
+                    passados, como elucida César. “Achávamos que depois da queda do muro de Berlim isso iria morrer. Até
+                    ficou escondido por um tempo, mas hoje, existe uma retomada de discussões semelhantes. É
+                    interessante como a gente volta a discutir coisas que eram do século passado”, reflete o professor.
+                </p>
+                <p>Daniel Gomes também acredita que o atual cenário de polarização no Brasil é uma consequência das
+                    contradições políticas petistas dos anos 2000, que não estabilizaram o parque industrial do país e
+                    priorizaram um crescimento da classe trabalhadora focado apenas no consumo, e não no fortalecimento
+                    da renda. “Há sim coisas em comum com os séculos passados, mas não podemos esquecer que o momento
+                    atual deriva, em grande parte, das próprias contradições da última década”, diz. “Precisamos tomar
+                    cuidado para não esquecer o que é próprio do nosso tempo”. </p>
+                <div class="video-solo">
+                    <iframe 
+                        src="https://www.youtube.com/embed/QkdZAW11Ano?&rel=0&modestbranding=1"></iframe>
+                </div>
+
+            </div>
+        </article>
+
+        <article id="second" data-sessao="second">
+            <div class="capa">
+                <div class="image img-ester">
+                    <span> Reprodução: Naoyuki Toyama</span>
+                </div>
+                <div class="capa-info">
+                    <div class="capa-title">
+                        <div class="linha"></div>
+                        <h2 data-title>Ondas e marés: instabilidade política na América do Sul</h2>
+                        <div class="linha"></div>
+                        <h4>Por Ester Santana</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <p>A polarização não é um fenômeno recente. Nos países do continente sul-americano, diversos movimentos
+                    políticos e econômicos ao longo das últimas décadas conduziram à ela. Para entender o cenário
+                    polarizado atual, é preciso retornar aos anos 90, quando governos autoritários e neoliberais foram
+                    substituídos por novas forças políticas. Era o começo da chamada <i>Onda Rosa</i>, período em que
+                    lideranças de esquerda subiram ao poder em toda América do Sul. </p>
+                <p>Para Marcelo Coutinho, pesquisador e coordenador do Laboratório de Estudos da América Latina (LEAL)
+                    da Universidade Federal do Rio de Janeiro (UFRJ), a ascensão de governos “mais à esquerda” na
+                    América do Sul “foi propiciada por um esgotamento natural dos governos anteriores” e seguida por uma
+                    “sequência de expansão e crises econômicas”. </p>
+                <p>Entre 2003 e 2008, o cenário internacional passou a se mostrar mais favorável para as economias
+                    sul-americanas, que se inseriram no mercado de matérias-primas exportando produtos como soja, trigo,
+                    cobre, petróleo e ferro. Nesse período, o continente atravessou o chamado superciclo das commodities
+                    agrícolas e minerais. </p>
+                <figure class="content-ilustracao">
+                    <img src="./img/Ester/1.Hoshi.png" class="figure-img img-fluid justify-content-center "
+                        alt="Ilustração sobre polarização politica" data-toggle="modal" data-target="#Ilustração-1">
+                    <figcaption class="figure-caption">Créditos: Hoshi</figcaption>
+                </figure>
+                <p>Além disso, os países da América do Sul também se aproximaram mais da Ásia, construindo relações
+                    comerciais, principalmente, com a China. “A aproximação da Ásia por parte das economias
+                    sul-americanas se deu pela volta das relações de dependência”, explica Marcelo Coutinho. Por meio
+                    dessa relação, os países exportadores de produtos primários deslocaram o eixo do comércio exterior
+                    para o gigante asiático.</p>
+                <p>O resultado dessa exuberância econômica foi visto e sentido. Houve um aumento generalizado do
+                    bem-estar e aceleração das taxas de crescimento, com redução da pobreza e da desigualdade de renda
+                    em todo continente. Como consequência, governos de diferentes ideologias puderam gastar mais do que
+                    seus antecessores, contribuindo para produção de mais empregos e melhores salários.</p>
+                <p>“O superciclo chinês trouxe benefícios, mas também colapsou os governos de esquerda ao provocar uma
+                    forte desindustrialização nos países”, afirma Coutinho, referindo-se ao resultado das relações de
+                    dependência, que ocasionou uma forte queda no nível da produção industrial, com uma menor
+                    participação das indústrias no Produto Interno Bruto (PIB) de seus países. “O desencantamento
+                    acontece quando as commodities caem e o lado negativo da dependência vem à tona, quando então também
+                    surgem escândalos de corrupção recordes que levam à desilusão popular”.</p>
+                <div class="subtitle_bloco">
+                    <h3 class="subtitle">Fim de um ciclo, e as dores dessa perda</h3>
+                </div>
+                <p>A partir de 2011, quando todos os países da América do Sul, com exceção do Chile, eram liderados por
+                    presidentes de esquerda, uma reversão do cenário econômico próspero entrou em curso. Contudo, os
+                    desdobramentos dessa reversão, com a piora das condições de vida, não foram sentidos de imediato.
+                </p>
+                <p>Apesar de fatores externos terem gerado a crise, tanto no Brasil quanto nos demais países da região,
+                    circunstâncias domésticas foram responsáveis por acirrar o descontentamento da população. Uma série
+                    de problemas ainda não resolvidos como desigualdade, violência e corrupção fizeram com que as
+                    expectativas de milhões de sul-americanos, que buscavam consolidar sua ascensão à classe média,
+                    fossem frustradas. </p>
+                <p>Revoltas, manifestações e agitações marcaram o fim de um ciclo na América do Sul: foi o começo da
+                    <i>Maré Azul</i>, nome dado ao expressivo levante dos governos de direita, com tendências mais
+                    conservadoras e neoliberais, em contraposição aos governos anteriores. </p>
+                <p>Em 2015, após a vitória do candidato argentino de centro-direita, Mauricio Macri, diversas lideranças
+                    políticas de direita também subiram ao poder no Chile, Colômbia, Peru e no Brasil, consolidando a
+                    tendência de mudança de governos no continente sul-americano. </p>
+                <p>“Essas forças da direita conservadora sempre existiram, mas haviam perdido força a partir do fim da
+                    segunda guerra mundial e no período da redemocratização”, afirma Giovana Zucatto, pesquisadora do
+                    Observatório Político Sul-Americano (OPSA) ligado ao Instituto de Estudos Sociais e Políticos da
+                    Universidade Estadual do Rio de Janeiro (UERJ). “Esses grupos conseguem enxergar uma janela de
+                    oportunidade para voltarem a ocupar o poder, especialmente com a crise econômica e os escândalos de
+                    corrupção”, diz. </p>
+                <p>Pautas em que a esquerda foi incapaz de apresentar soluções satisfatórias como a busca por renovação
+                    política e maior firmeza no combate à corrupção se transformaram em questões centrais para a direita
+                    sul-americana. “O avanço da direita como um todo puxou o debate político para o âmbito da corrupção
+                    e fez amplo uso da judicialização da política”, elucida Zucatto. Esse crescimento, segundo a
+                    pesquisadora, está ligado a um contexto maior, no qual lideranças políticas globais têm defendido
+                    discursos nacionalistas e identitários, em reação “aos avanços dos grupos sociais historicamente
+                    marginalizados”. </p>
+                <p>“As principais características da direita sul-americana são o conservadorismo em termos de moral e
+                    costumes, posturas antidemocráticas bastante totalitárias e apelo à militarização”, aponta Zucatto.
+                    “Especialmente em relação ao último, cabe ressaltar o papel que os militares das Forças Armadas e
+                    policiais têm desempenhado na ascensão e manutenção desses grupos no poder”, afirma.</p>
+                <figure class="content-graph">
+                    <img src="./img/Ester/info.png" class="figure-img img-fluid justify-content-center "
+                        alt="Foto de Protesto">
+                </figure>
+                <div class="subtitle_bloco">
+                    <h3 class="subtitle">Ondas da polarização e seus efeitos</h3>
+                </div>
+                <p>Nesse cenário, a polarização figura como uma forma de racionalizar os fatos. “Ela é uma maneira de
+                    diferenciar opiniões, posicionamentos políticos e projetos de sociedade. Serve para a construção de
+                    um horizonte ético, quando distintas leituras, morais e propostas se antagonizam”, explica Fábio
+                    Ortolano, doutor em Psicologia Social pela Universidade de São Paulo (USP), integrante do Grupo de
+                    Estudos e Pesquisas em Psicologia Política, Políticas Públicas e Multiculturalismo da USP. “Contudo,
+                    quando levada ao extremo, a polarização se torna limitadora, pois a realidade e a sociedade são mais
+                    complexas”. </p>
+                <p>Para o cientista social e professor na Universidade Presbiteriana Mackenzie (UPM), Felipe Corrêa, no
+                    Brasil atual, a polarização é resultado da politização de uma sociedade que não estava educada para
+                    a política. “Essa polarização se dá de uma maneira muito grosseira, pouco profunda do ponto de vista
+                    político e resulta nesse caos, em que as pessoas se envolvem, mas levam para a política um
+                    comportamento religioso, comportamento de torcida de futebol”, diz Corrêa. “Quando se entra para a
+                    política com esse espírito, fica muito mais um jogo de torcida do que qualquer outra coisa”. </p>
+                <p>Fábio Ortolano, doutor em psicologia social, defende que as relações sociais e as instituições das
+                    quais os indivíduos participam influenciam na identificação com determinada ideologia ou bandeira
+                    política. Por isso, “é preciso levar em conta múltiplas variáveis a fim de compreender fenômenos
+                    políticos e sociais, pois uma única lente não é suficiente para enxergar todas as partes”, aponta.
+                    “Para mim, a maior consequência da polarização é o reducionismo, responsável por naturalizar e
+                    cristalizar alguns processos, realidades, coisas e pessoas muitas vezes. Desse modo, deixamos de
+                    lado o pensamento complexo, uma leitura holística, e passamos a agir e interpretar as coisas pelas
+                    emoções, estigmas e preconceitos.”</p>
+                <figure class="content-ilustracao">
+                    <img src="./img/Ester/2.Hoshi.png" class="figure-img img-fluid justify-content-center "
+                        alt="Ilustração sobre polarização politica" data-toggle="modal" data-target="#Ilustração-2">
+                    <figcaption class="figure-caption">Créditos: Hoshi</figcaption>
+                </figure>
+                <div class="subtitle_bloco">
+                    <h3 class="subtitle">Dissenso intolerável</h3>
+                </div>
+                <p>Os indivíduos não possuem opiniões unânimes, estáticas, indivisíveis. Pelo contrário. Inúmeras vezes
+                    as diferenças entre os sujeitos não permitem um consenso entre as partes, mesmo que seja para o bem
+                    de todos. Porém, como explica Daniel Gomes, doutor em história social pela USP e professor na
+                    Universidade de Brasília (UNB), é na democracia que as divergências políticas podem ser expressas
+                    publicamente, pois nesse sistema o conflito é considerado legítimo. “É preciso que as pessoas tomem
+                    cuidado ao criticar a polarização como uma coisa ruim, pois ela é inerente à democracia. Alguns
+                    graus de diferenças, as formas de polarização, de contextos e debates são inerentes à própria ideia
+                    democrática”, explica. </p>
+                <p>O problema da polarização não está nas diferentes visões que uma pessoa é capaz de ter sobre um tema,
+                    mas sim, no fato de que ela pode fazer com que questões verdadeiramente importantes sejam deixadas
+                    de lado. “As pessoas estão se enfrentando, tanto de um lado e do outro dos polos, quanto dentro dos
+                    polos, sem enfrentar as grandes questões do Brasil contemporâneo”, analisa o cientista social Felipe
+                    Corrêa. “O que temos hoje é uma briga partidária entre esquerda e direita. É, por exemplo, a defesa
+                    do porte de armas, enquanto o problema da segurança pública, estudado de modo sério e aprofundado, é
+                    ignorado”, diz.
+                </p>
+                <p>Segundo o professor Daniel Gomes, ao longo da história, o ocidente já experimentou outros momentos de
+                    polarização que dividiram famílias e romperam relacionamentos, como foi, por exemplo, o confronto
+                    entre católicos e protestantes durante a Reforma Protestante. “Parentes se estranharam e vários
+                    estranhos se <i>irmanaram</i>. É isso que as polarizações costumam fazer na história. Os diferentes
+                    passam
+                    a se assemelhar, criando novos tipos de associações, e antigos tipos de associações são desfeitos”,
+                    explica Gomes.</p>
+                <p>No caso da história recente do Brasil, o atual cenário polarizado tem remontado esse quadro, muitas
+                    vezes se configurando como um fenômeno inédito para as novas gerações. “A polarização, tal qual
+                    estamos vivendo, invadiu a vida privada. Quem é mais jovem, ainda não havia visto essa invasão pela
+                    questão política no Brasil”, analisa o professor. “Hoje, a maioria das famílias tem alguma divisão.
+                    Se eu tiver algum problema financeiro, por exemplo, é mais fácil pedir dinheiro para um amigo do que
+                    para familiares muitas vezes. Isso devido a esse estranhamento que vem da polarização. O impacto nas
+                    relações é bastante profundo”, completa Gomes.</p>
+                <p>De acordo com o pesquisador Fábio Ortolano, a polarização extrema produz um ambiente hostil e faz as
+                    pessoas se fecharem para o diálogo e a tolerância. “A cientista política Chantal Mouffe fala da
+                    democracia como espaço do dissenso, não apenas do consenso. Nós precisamos saber discordar. O outro
+                    pode ser um antagonista, não um inimigo que eu devo eliminar”, diz Ortolano. </p>
+                <p>Para o professor Daniel Gomes, a polarização não será plenamente solucionada pelas vias políticas. “A
+                    via política é muito importante, precisamos fortalecer as instituições democráticas, a igualdade
+                    perante a lei, precisamos acabar com política de compadrio, do <i>“você sabe com quem está
+                        falando”</i>.
+                    Não digo que o campo político não é importante. Ele é fundamental”, reflete. “Contudo, o que ficou
+                    claro após 30 anos de Constituição é que não basta ter uma lei para resolver o problema. Não iremos
+                    solucionar o problema da polarização sem antes resolvermos o problema da miséria e da desigualdade
+                    social em suas mais variadas formas”, afirma Gomes. </p>
+                <figure class="content-ilustracao">
+                    <img src="./img/Ester/3.Hoshi.png" class="figure-img img-fluid justify-content-center "
+                        alt="Ilustração sobre polarização politica" data-toggle="modal" data-target="#Ilustração-3">
+                    <figcaption class="figure-caption">Créditos: Hoshi</figcaption>
+                </figure>
+            </div>
+        </article>
+
+        <article id="third" data-sessao="third">
+            <div class="capa">
+                <div class="image img-leticia">
+                    <span>Reprodução: Peter Vilanova</span>
+                </div>
+                <div class="capa-info">
+                    <div class="capa-title">
+                        <div class="linha"></div>
+                        <h2 data-title>Ciber polarização: conflitos tecnológicos</h2>
+                        <div class="linha"></div>
+                        <h4>Por Letícia Remonte</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <p>Em 2013, as redes sociais se consolidaram como o principal meio de organização política, figurando
+                    como um importante meio para divulgação de informações sobre as manifestações. O <i> Facebook </i>
+                    foi o
+                    maior agente de comunicação virtual nesse cenário, com uma grande quantidade de eventos, fóruns e
+                    páginas voltadas aos atos. Os acontecimentos desse período foram tão marcantes que continuam
+                    repercutindo na política nacional até os dias de hoje.</p>
+                <p>“A política atual ainda sente o impacto das Jornadas de Junho”, diz o professor e pesquisador da
+                    Pontifícia Universidade Católica de São Paulo (PUC-SP), Fábio Monteiro. Seguindo a teoria do
+                    filósofo e doutor em Teorias Literárias Francisco Bosco, Fábio afirma que o evento precisa ser visto
+                    sempre em retrospectiva. Ele defende que três grandes pilares foram abrangidos pelas manifestações:
+                    a crise do Lulismo e o início da queda petista; a crise na cultura, referente a falta de debate
+                    político por meio da expressão cultural; e a entrada das redes sociais no sistema político
+                    brasileiro.</p>
+                <p>O professor cita as Jornadas como essenciais para a efervescência da polarização. “Houve um aumento
+                    do fenômeno a partir de junho de 2013. Nos últimos sete anos, ela tem se acentuado cada vez mais,
+                    seja por questões econômicas, políticas, partidárias ou, sobretudo, pela pauta de costumes”, afirma.
+                </p>
+                <figure class="content-img">
+                    <img src="./img/Leticia/protesto.jpg" class="figure-img img-fluid justify-content-center "
+                        alt="Foto de Protesto" data-toggle="modal" data-target="#ciber-1">
+                    <figcaption class="figure-caption">Jornadas de Junho 2013. Reprodução: Tiago Queiroz.</figcaption>
+                </figure>
+                <div class="modal" id="ciber-1" tabindex="-1">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <div class="modal-content-img">
+                            <img src="./img/Leticia/protesto.jpg" class="figure-img img-fluid justify-content-center "
+                                alt="Jornadas de Junho 2013">
+                        </div>
+                    </div>
+                </div>
+                <p>Fábio destaca o papel das redes sociais como propulsoras desse cenário a partir da criação de
+                    situações de relevância de opinião de forma ilusória. Por isso, as expressões de críticas políticas
+                    ocorrem de forma tão intensa, já que os usuários sentem que através da plataforma seus pensamentos e
+                    atos são mais importantes do que os de outras pessoas. “As redes sociais trouxeram novas motivações,
+                    sentidos e determinações de tendências de comportamento”.</p>
+                <strong class="citacao">
+                    “Elas criam a ilusão de que o que falamos, o que pensamos, as nossas opiniões são efetivamente
+                    importantes. Elas têm um apelo psicoafetivo, alimentam a nossa necessidade de reconhecimento
+                    social.” - Fábio Monteiro.
+                </strong>
+                <p>Ele finaliza refletindo sobre o papel dos<i> youtubers</i> e <i>digital influencers</i> na política
+                    brasileira.
+                    Para Fábio, esses profissionais se sentem aptos a falar com mais normalidade sobre pautas de
+                    costume, como questões de gênero e posições políticas, por abordarem temas atuais na internet. A
+                    política, encaixada nessas pautas, atua nos <i>outsiders</i>, ou seja, pessoas que não são adeptas
+                    da
+                    política exercida de modo tradicional, ou não se sentem representadas pelos políticos atuantes.</p>
+                <div class="subtitle_bloco">
+                    <h3 class="subtitle">Algoritmos: escalada das fake news</h3>
+                </div>
+
+                <p>A pesquisadora e advogada do centro de pesquisa em direito e tecnologia Internet Lab, Heloisa
+                    Massaro, afirma que a internet mudou a maneira de comunicação e, consequentemente, a forma de se
+                    fazer política: se antes as campanhas eram marcadas pelo horário eleitoral gratuito, hoje, a
+                    internet permite que mais pessoas passem a fazer parte do debate político simultaneamente. “Os
+                    algoritmos desenham o que pode ser mais relevante para o usuário, isso traz novos elementos na forma
+                    de campanhas políticas no âmbito virtual”, explica.</p>
+                <p>Segundo ela, a instantaneidade dos meios digitais e a possibilidade de receber conteúdos de qualquer
+                    usuário intensificou a prática das <i>fake news</i>, movimento que Heloísa prefere nomear como
+                    “desinformação”. As chamadas “Campanhas em Formato de Rede” se popularizaram e deram voz a
+                    apoiadores, democratizando a disseminação de opiniões, que são distribuídas em formato noticioso. “A
+                    informação deixa de ser controlada pela mídia de massa e se torna instrumento para usuários que são
+                    agentes de circulação de conteúdo. Assim, a notícia não é mais necessariamente produzida sobre os
+                    imperativos do jornalismo, podendo ser completamente inventada”, diz. </p>
+                <p>Renato Assad, fundador do portal Esquerda Web, relata que a principal dificuldade de se fazer
+                    política na internet em um cenário polarizado é lidar com a grande quantidade de notícias
+                    falsas. “A
+                    polarização intensifica o debate, intensifica a disputa, mas por um lado, ela também pode banalizar
+                    a discussão política pelas <internet>fake news</internet>”, afirma.</p>
+                <article id="info-leticia">
+                    <h4>fake news - eleições 2018</h4>
+                    <h5>O jornal El País monitorou 272 grupos de whatsapp disseminadores de notícias falsas no período
+                        eleitoral de 2018</h5>
+                    <canvas id="leticia-grap1"></canvas>
+                </article>
+                <div class="subtitle_bloco">
+                    <h3 class="subtitle">Polarização: lado esquerdo</h3>
+                </div>
+                <p>Devido à recente ascensão de lideranças políticas de direita no Brasil, os simpatizantes dos
+                    representantes de esquerda precisaram reafirmar seus ideais de forma mais explícita. Assim surgiu o
+                    Esquerda Web em junho de 2019, um portal aberto para textos jornalísticos colaborativos com domínios
+                    ao redor do mundo, em países como França, Argentina e Espanha. </p>
+                <p>Renato Assad, de 28 anos, fundador do projeto e filiado ao PSOL-SP, conta como o portal atua. “A
+                    ideia era fazer esse site justamente para poder abrir a discussão, se apropriar do meio virtual e
+                    encaminhar uma construção política organizativa aqui no Brasil”. Por conta disso, ele afirma receber
+                    mensagens de ódio nas redes sociais do Esquerda Web. “A primeira coisa que vem são caracterizações
+                    banais que deixam de lado qualquer possibilidade de debate político sério e se atentam a rótulos: ao
+                    comunista, ao vagabundo, ao <i>gayzista</i> que quer transformar nossas crianças em sei lá o que”.
+                </p>
+                <p>O cientista social e professor na Universidade Presbiteriana Mackenzie (UPM), Felipe Corrêa, explica
+                    que na mesma medida em que as redes sociais permitem aos indivíduos se manifestarem mais, elas
+                    servem para reforçar comportamentos fanáticos e ideológicos. “Como consequência dessa polarização,
+                    surgiram muitos espaços que têm conseguido dar respostas a esses vínculos, desde igrejas universais
+                    até grupos políticos de internet”, explica.
+                </p>
+                <div class="subtitle_bloco">
+                    <h3 class="subtitle">Polarização: lado direito</h3>
+                </div>
+                <p>Nicole McLean é australiana e autora de uma tese de doutorado na Universidade de Brisbane, sobre
+                    discursos de movimentos da direita brasileira nas redes sociais. Para ela, esses movimentos são
+                    divididos em dois setores: a parte política e a parte midiática. Ela expõe essa divisão quando
+                    relata que o Movimento Brasil Livre (MBL) produziu conteúdos informativos enviesados para as mídias
+                    digitais. “No início de 2017, o MBL criou um segmento chamado “MBL News”. É uma réplica, uma espécie
+                    de Jornal Nacional, que ocorre diariamente, ao longo da semana. Lá, eles dão a opinião deles sobre
+                    notícias políticas, essa é uma das características de mídia do movimento”.</p>
+                <p>A doutoranda também cita o movimento “Nas Ruas”, protagonizado pela deputada federal Carla Zambelli
+                    (PSL). “Esse movimento sempre publicou muitas notícias. Desde 2017, tem bastante posts, lives e
+                    memes pró-Bolsonaro nas redes sociais do Nas Ruas.” Para Nicole, isso teve clara influência na
+                    eleição do então pré-candidato presidencial, Jair Bolsonaro, em 2018.</p>
+                <p>O vereador de Carapicuíba pelo PSDB, Fabinho Reis, destaca a rapidez de Bolsonaro em se adaptar e
+                    fazer política nas redes sociais. “Ele usou muito bem as ferramentas das redes e postagens de
+                    vídeos. É até meio amador, mas é uma coisa que a população gosta. O Bolsonaro captou a mensagem,
+                    utilizou isso na campanha e continua usando para governar”.</p>
+
+                <div id="carouselExampleControls" class="carousel slide w-65" data-ride="carousel"
+                    data-interval="false">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="video">
+                                <iframe 
+                                    src="https://www.youtube.com/embed/C9GLGnnfLQA?&rel=0&modestbranding=1"
+                                    ></iframe>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="video">
+                                <iframe 
+                                    src="https://www.youtube.com/embed/1Irje7lZ-SQ?&rel=0&modestbranding=1"
+                                    ></iframe>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="video">
+                                <iframe 
+                                    src="https://www.youtube.com/embed/T83lwJuUPr4?&rel=0&modestbranding=1"
+                                    ></iframe>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="video">
+                                <iframe 
+                                    src="https://www.youtube.com/embed/4zs6pZnSpYE?&rel=0&modestbranding=1"
+                                    ></iframe>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="video">
+                                <iframe 
+                                    src="https://www.youtube.com/embed/7ZjUFuOwqqU?&rel=0&modestbranding=1"
+                                   ></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </article>
+
+        <article id="fourth" data-sessao="fourth">
+            <div class="capa">
+                <div class="image img-stephanie">
+                    <span>Reprodução: Fernando Correia</span>
+                </div>
+                <div class="capa-info">
+                    <div class="capa-title">
+                        <div class="linha"></div>
+                        <h2 data-title>Rostos que dividem o Brasil</h2>
+                        <div class="linha"></div>
+                        <h4>Por Stephanie Fazio</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <p>“Ocupar e resistir!”. Esse era o grito que impulsionava os militantes que desciam a Av. Higienópolis
+                    (SP) com pedaços de pau nas mãos em 31 de agosto de 2016, data em que a ex-presidente Dilma Rousseff
+                    sofreu o impeachment. “Quando a manifestação estourou, tinha um carro da polícia vindo em direção à
+                    Brigadeiro. Mas, do nada, o carro entrou dando cavalinho de pau no meio dos manifestantes, quase
+                    atropelou todo mundo e saíram [os policiais] atirando e tacando bomba”, relembra Manuela Abreu,
+                    advogada e militante de esquerda de 24 anos. </p>
+                <p>Segundo a advogada, que estava acompanhada de suas amigas Carolina Siqueira e Marcela Tolosa, ambas
+                    advogadas de 24 anos, a polícia militar já estava a postos, antes mesmo do ato, que tinha como ponto
+                    de partida o Museu de Arte de São Paulo (Masp), se iniciar. “Foi muito violento, mas com uma
+                    resistência muito grande”, conta. </p>
+                <p>Em 13 de junho de 2013, José Roberto Castro, jornalista de 32 anos que cobriu as manifestações pelo
+                    jornal O Estado de S. Paulo, conta que estava andando pela Av. São Luís, quando tentou cruzar a
+                    Praça Roosevelt para ir até sua casa e notou a presença de fogueiras feitas com lixo. “Tinha um
+                    batalhão inteiro de policiais olhando para mim, que estava sozinho naquele momento: eu e 50
+                    policiais de choque. Eu subi a Consolação, ali o cenário era de guerra”, descreve. Segundo Castro, a
+                    polícia foi violenta e, na Rua Augusta, houve muita repressão. “O que aconteceu naquele dia acendeu
+                    alguma coisa nas pessoas que não vão às manifestações, elas se sentiram revoltadas”, diz o
+                    jornalista. </p>
+                <p>O estudante de história Rodrigo Macedo, de 27 anos, também foi para as ruas em 2018. Nas redes
+                    sociais, o movimento de apoio ao então candidato à presidência Jair Bolsonaro estava no auge, assim
+                    como o antipetismo. “A forma de militância, de ir na rua e colocar a camisa amarela ou com a foto do
+                    Bolsonaro era algo novo, não era comum ter manifestação de direita no Brasil”, revela. Ele relata
+                    que logo após o atentado sofrido por Bolsonaro, em 6 de setembro de 2019, as pessoas foram com mais
+                    força para as manifestações. </p>
+                <div class="subtitle_bloco">
+                    <h3 class="subtitle">Números dos contextos</h3>
+                </div>
+                <p>“Teve uma fala do ex-secretário de transporte de São Paulo que dizia que o transporte público era um
+                    barril de pólvora para uma manifestação, e ele explodiu em 2013, porque esses movimentos conseguiram
+                    angariar muito apoio da população, principalmente da classe média”, afirma Rafael Ozório, professor
+                    de história de 35 anos.</p>
+                <p>Segundo Felipe Corrêa, cientista social e professor da Universidade Presbiteriana Mackenzie (UPM), o
+                    que aconteceu no movimento de 2013, cuja marca principal foi o questionamento das instituições, foi
+                    a ampliação das pautas e uma participação muito significativa de vários setores da sociedade
+                    brasileira.</p>
+                <p>De acordo com o professor Ozório, a partir do momento em que as manifestações começaram a angariar
+                    muitas pessoas, houve uma divisão. De um lado, o Movimento Passe Livre (MPL) foi para a periferia,
+                    levando as manifestações para locais como Jardim  Ângela e Capão Redondo. O movimento conseguiu um
+                    apoio maior das pessoas que moravam mais afastadas do centro e, consequentemente, sofriam mais com o
+                    aumento do preço do transporte público. </p>
+                <p>“A gente começou a ver outros movimentos mais conservadores aparecendo. Surgiram os grupos do
+                    Movimento Brasil Livre (MBL), formados também por uma classe média e uma classe média alta que
+                    acabaram tomando essa iniciativa de 2013, que sai da esquerda e leva ao impeachment da Dilma”,
+                    explica o professor de história. </p>
+
+
+                <article class="info-ste" id="info-ste">
+                    <h4>Aproximações entre os militantes paulistas pró e contra o impeachment de Dilma Rousseff</h4>
+                    <div class="canvas">
+                        <canvas id="grap-1"></canvas>
+                        <canvas id="grap-2"></canvas>
+                    </div>
+
+                    <h5>fontes:empresa lean survey, 2016 e datafolha,2016.</h5>
+                </article>
+
+
+                <p>Segundo Felipe Corrêa, cientista social, a polarização se constituiu entre 2013-2016. A direita
+                    assumiu um posicionamento único, mas havia dois campos dentro dela: um deles era o tucanato, somado
+                    a outros setores que não tinham expressão pública bastante conservadora. Aos poucos, um setor mais
+                    radical se desenvolveu nesse meio, tendo o antipetismo como elemento central da sua ideologia, o que
+                    culminou no bolsonarismo.</p>
+                <p>Na visão de Corrêa, por um lado, o PT estava perdendo poder, mas ainda se posicionando como um grande
+                    ator da esquerda. Surgiu, então, uma reação a esse crescimento da direita com a incorporação de
+                    outros setores de esquerda. Esse cenário acaba se tornando uma disputa entre duas forças. “É o
+                    antipetismo que faz essa polarização, é ele que constitui a direita dos extremos opostos”.</p>
+                <div class="info-graph">
+                    <iframe
+                        src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1CPljFiYCyfE-9In4P1EJLRHxwfOIvFNgWwHEu4d2nXE&font=Default&lang=pt&initial_zoom=2&height=650'
+                        width='100%' height='650' webkitallowfullscreen mozallowfullscreen allowfullscreen
+                        frameborder='0'></iframe>
+                    <span>Essa linha do tempo busca pontuar algumas manifestações brasileiras que ocorreram de 2013 a
+                        2020. Os critérios utilizados para a escolha das datas foram o número de manifestantes e a
+                        amplitude dos atos.</span>
+
+                    <span> Fontes: G1, El País, O Estado de São Paulo, Brasil de Fato, Veja, GZH Política e Uol.</span>
+                </div>
+                <div class="subtitle_bloco">
+                    <h3 class="subtitle">Perfil dos militantes ao longo do tempo</h3>
+                </div>
+                <p>Na opinião da advogada Manuela Abreu, em 2013, o perfil dos manifestantes era de pessoas mais jovens,
+                    na faixa dos 15 aos 35 anos, contudo, havia alguns mais velhos também. Segundo pesquisa divulgada
+                    pelo Datafolha em 20 de junho de 2013, 63% dos manifestantes eram homens e 39% eram mulheres. No
+                    quesito idade, a maioria tinha entre 26 a 35 anos. O levantamento também mostrou que 77% dos
+                    participantes tinham ensino superior.</p>
+                <p>“Já no final de 2014, dava para perceber que era um público à direita, conservador, mais velho e
+                    rico”, diz o jornalista José Roberto Castro. Manuela, que também participou das manifestações contra
+                    o impeachment de Dilma em 2016, relembra que a maioria do público era jovem. Porém, quando os atos
+                    eram convocados pelo PT, PSOL, por sindicatos ou pelo MST, eles eram mais plurais, abarcando pessoas
+                    de todas as idades. </p>
+                <p>O estudante Rodrigo Macedo, que participou das manifestações pró-Bolsonaro em 2018, relembra que nos
+                    atos de direita muitos jovens na faixa dos 20-27 anos estavam presentes, mas também havia pessoas
+                    mais velhas. “Tinham muitos jovens. A Avenida Paulista, por exemplo, estava lotada de gente de
+                    amarelo apoiando a Lava Jato, além de um forte clamor por mais segurança”, diz. </p>
+                <div class="content-graph">
+                    <article id="info-stephanie">
+                        <h4>Quem eram os manifestantes de 2019?</h4>
+                        <canvas id="myChart"></canvas>
+                        <h5>* por serem itens distintos, a soma total dos dados ultrapassa 100%</h5>
+                    </article>
+                </div>
+                <div class="subtitle_bloco">
+                    <h3 class="subtitle">Motivações</h3>
+                </div>
+                <p>Choiti Kamikawachi, militante de 69 anos, conta que foi a indignação com os governos do PT, acentuada
+                    pela Operação Lava Jato, que o impulsionou a estar nas ruas. “Posso dizer que as minhas primeiras
+                    participações nas manifestações de rua foram a partir do movimento de impeachment da ex-presidente
+                    Dilma. Mentiras, arrogância e desrespeito à constituição eram práticas comuns neste governo”,
+                    afirma.</p>
+                <p>Hoje, de acordo com Choiti, quem mantém o presidente Bolsonaro no poder é o povo que o apoia, o que
+                    fica evidenciado nas manifestações e aparições em público. “A militância nesses momentos faz a
+                    diferença”, defende. O estudante de história Rodrigo Macedo também acredita que o ativismo é
+                    importante. “Um partido político tem muito mais força quando possui esse apoio. A militância é
+                    essencial tanto para um deputado poder difundir suas ideias, quanto para a população que quer
+                    reivindicar algo”.</p>
+                <p>O jornalista José Roberto Castro levanta um questionamento, afirmando que é necessário entender o
+                    motivo pelo qual as pessoas estavam tão insatisfeitas em 2013 e quietas em 2017, quando, segundo
+                    ele, a crise econômica e o desemprego estavam em 12% ao ano. “A renda caiu, o real desvalorizou e a
+                    saúde e a educação não melhoraram. São perguntas difíceis, mas fazê-las ajuda a pensar o que foi
+                    tudo isso”, reflete. </p>
+                <div class="video-solo">
+                    <iframe 
+                        src="https://www.youtube.com/embed/X1ZTR85qjCQ?&rel=0&modestbranding=1" ></iframe>
+
+                </div>
+                <div class="subtitle_bloco">
+                    <h3 class="subtitle">Afastamentos e aproximações</h3>
+                </div>
+                <p> “A minha mãe é professora, já se candidatou a prefeita e a deputada e é uma pessoa muito engajada na
+                    política. Os meus pais e irmãs são pessoas que comungam ideais políticos comigo”, relata a advogada
+                    Manuela Abreu, acrescentando que, desde a eleição disputada em 2014 entre Aécio Neves (PSDB) e Dilma
+                    Rousseff (PT), ela saiu dos grupos de família com seus tios e avós por ter ficado difícil conciliar.
+                </p>
+                <p>A advogada de Jacareí (SP), explica que encontrou o seu nicho quando veio para a capital paulista,
+                    onde conheceu grupos como o Levante Popular da Juventude, União da Juventude Socialista (UJS),
+                    movimentos feministas dentro do Mackenzie e na PUC, entre outros, e a partir daí, entrou de vez para
+                    a militância. </p>
+                <p>Já Choiti Kamikawachi conta que não toma nenhuma atitude quando alguém posta algo contraditório aos
+                    seus pensamentos nas redes sociais, a menos que seja provocado. Ele também diz que toma muito
+                    cuidado na hora de selecionar seus amigos. Do mesmo modo, o professor Rafael Ozório diz ter criado
+                    laços com as pessoas que conheceu. </p>
+                <strong class="citacao">
+                    “Cheguei a morar com alguns amigos que eu conheci através da militância, mantenho boa parte deles
+                    até hoje” - Rafael Ozório.
+                </strong>
+                <p>O estudante de história Rodrigo Macedo afirma que nunca brigou por conta de posicionamentos
+                    políticos, mas pequenos desentendimentos existiram. Ele conta que quando falavam para ele que o
+                    Bolsonaro iria implantar uma ditadura e que armar a população resultaria em mais violência, tentava
+                    contra-argumentar e explicava que a mídia era responsável por propagar essas ideias. </p>
+                <p>Para Macedo, a polarização não é algo bom, pois a divisão ocorre somente em dois lados e os mais
+                    moderados não conseguem difundir seus pensamentos. “As pessoas esquecem que existem outros partidos,
+                    outras ideias, mas é preciso haver diálogo para se chegar ao meio termo. Essa polarização acaba
+                    fazendo mal para a nossa democracia, pois em um cenário saudável todos têm que ser ouvidos”, afirma.
+                </p>
+                <div class="subtitle_bloco">
+                    <h3 class="subtitle">Visão de futuro</h3>
+                </div>
+                <p>“Eu ouvi de cientistas políticos que em momentos de necessidade extrema, o que uma parcela importante
+                    da população brasileira pode vir a ter ano que vem são um terreno fértil para revoltas. Quando a
+                    pessoa está realmente em urgência o problema é o caos social”, destaca o jornalista José Roberto
+                    Castro, complementando que as expectativas para a crise econômica não são positivas, por conta do
+                    provável fim do auxílio emergencial concedido pelo governo.</p>
+                <p>A pandemia está evidenciando as desigualdades sociais e isso, segundo a advogada Manuela Abreu, pode
+                    gerar mais polarização, pois as pessoas estão ficando desempregadas e sem dinheiro para as despesas
+                    essenciais, como a alimentação. O estudante de história Rodrigo Macedo também concorda com essa
+                    visão. “Se a economia não for bem em 2021 e isso afetar as famílias brasileiras, eu acredito que vão
+                    ter manifestações sim”, diz. </p>
+            </div>
+        </article>
+
+        <article id="fifth" data-sessao="fifth">
+            <div class="capa">
+                <div class="image img-naomi">
+                    <span>Reprodução: Gabriela Batista</span>
+                </div>
+                <div class="capa-info">
+                    <div class="capa-title">
+                        <div class="linha"></div>
+                        <h2 data-title>Conflito versus confronto: a luta do nós contra eles
+                        </h2>
+                        <div class="linha"></div>
+                        <h4>Por Tifany Kimura</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <p>Pluripartidarismo é o que vigora no sistema político brasileiro. Ocorre quando três ou mais partidos
+                    políticos assumem o controle de um governo, de modo independente ou por uma coalizão, e concordam em
+                    trabalhar em conjunto para atingir uma meta. Em regimes democráticos, juntamente com a atuação dos
+                    governantes, a participação do povo é necessária para o pleno exercício da cidadania.</p>
+                <p>A vitória da ex-presidente Dilma Rousseff em 2014, por uma margem de 3%, evidenciou a polarização
+                    política do país. Naquele ano, o sentimento de insatisfação pela alta dos preços dos produtos e
+                    serviços e os sucessivos escândalos de corrupção foram responsáveis por acirrar os ânimos da
+                    população. Como consequência, em agosto de 2016, Dilma Rousseff sofreu o impeachment que interrompeu
+                    seu mandato, confirmando a irritação política dentro e fora do Congresso. </p>
+                <p>Greves nas ruas e manifestações continuaram quando o até então vice-presidente Michel Temer assumiu o
+                    governo. Uma parcela da população se uniu em torno da pauta anticorrupção, com movimentos
+                    conservadores alinhados à direita se fortalecendo e dando espaço para a candidatura de Jair
+                    Bolsonaro à presidência da República. Em 2018, o resultado da eleição presidencial intensifica ainda
+                    mais a divisão política brasileira. </p>
+                <figure class="content-ilustracao">
+                    <img src="./img/Naomi/ilustracao1.png" class="figure-img img-fluid justify-content-center "
+                        alt="..." data-toggle="modal" data-target="#modalConsequecia">
+                    <figcaption class="figure-caption">Créditos: Hoshi</figcaption>
+                </figure>
+                <p>Para Rosinei Naves, mestre em História Econômica pela USP e professora na Universidade São Judas
+                    Tadeu (USJT), existe um problema quando os partidos se fecham para o diálogo. “A direita e a
+                    esquerda foram seduzidas pelos interesses próprios e não coletivos. Quando essa polarização conduz a
+                    sociedade ao fascismo, a desinformação, ao aprofundamento das desigualdades sociais, esse processo
+                    pode levar ao autoritarismo”, afirma.</p>
+                <p>Para que os pólos não interfiram um no outro, segundo Rosinei, é necessário existir uma genuína
+                    preocupação entre ambos os lados de não ultrapassarem seus limites. “Não deveria ser um problema
+                    viver com pessoas que pensam diferente. Pode não parecer, mas as diferenças são saudáveis. Contudo,
+                    todas as ideias e opiniões deveriam ser sustentadas por dados científicos, gostemos ou não”,
+                    reflete. Ela acredita que, para dar vazão às diferenças de maneira saudável, as pessoas devem ser
+                    educadas a conviver com o contraditório. </p>
+                <p>Segundo a professora, fazer política é uma característica humana, mas devido a educação deficitária,
+                    as pessoas não possuem familiaridade com o tema. “Desde que nascem, as pessoas são levadas a pensar
+                    em política como algo estranho, indiferente a elas próprias e não aprendem que política é, na
+                    verdade, a arte de administrar o diverso e o adverso”, diz. </p>
+                <div class="subtitle_bloco">
+                    <h3 class="subtitle">Contrastes na prática</h3>
+                </div>
+                <p>À medida que ambos os lados, esquerda e direita, foram lutando por mais espaço, os discursos se
+                    inclinaram para uma maior radicalização, nutrindo a polarização política por meio da intensificação
+                    das divergências. “Sem conflito a política não existe. Ela faz parte desse ato”, defende a socióloga
+                    e pesquisadora de Ciência Política na Unicamp, Ana Claúdia Teixeira. “Na prática, não importa mais o
+                    que se está defendendo, mas quem está defendendo”. </p>
+                <p>Para o professor de filosofia e sociologia da Universidade Federal de São Paulo (UNIFESP), Marcos
+                    Luciano Carvalho, quando se analisa os acontecimentos políticos que marcaram a história recente do
+                    Brasil, fica claro que a direita ainda não possuía grande expressividade. "Durante os mandatos de
+                    Fernando Henrique Cardoso, Lula, Dilma e Temer, por exemplo, a direita não era tão forte e a
+                    polarização ainda não era tão intensa. A ausência de polarização foi e é danosa",declara.</p>
+                <p>Os pontos de vista ideológicos influenciam em grande medida o debate brasileiro. Essas duas forças
+                    são representadas pelo antagonismo entre direita e esquerda. “Às vezes, o indivíduo tem um
+                    pensamento super conservador para algumas coisas e para outras é progressista. Pode ser incoerente,
+                    mas isso se deve aos diferentes processos de socialização que ocorrem desde a infância”, explica a
+                    socióloga Ana Claúdia. </p>
+                <div class="subtitle_bloco">
+                    <h3 class="subtitle">Destaques na mídia</h3>
+                </div>
+                <p>Se a polarização sempre existiu, mas não era bem expressiva, por que tem ganhado cada vez mais
+                    destaque? Uma possível resposta para a questão é o universo digital, que pode propiciar essa
+                    tendência. “A grande mídia contribuiu de diversas formas com as manifestações, ajudando na
+                    divulgação de data, horário e local dos atos e noticiando pautas, divulgando fotos, fazendo
+                    enquetes”, descreve a autora Maria da Glória Marcondes Gohn, em seu livro ‘A Sociedade Brasileira em
+                    Movimento’. </p>
+                <p>Um exemplo são as redes sociais que utilizam algoritmos para definir quais conteúdos chegarão até os
+                    usuários e quais postagens se encaixam com as visões de mundo de cada internauta. Nesse cenário,
+                    opiniões discordantes podem chegar ao ponto de serem consideradas inaceitáveis. “É irônico o papel
+                    das redes sociais, pois a tendência é se fechar e não se abrir para opiniões diferentes. O meio não
+                    é propício, as mídias não ajudam, pois os algoritmos calculam para deixar os usuários, muitas vezes,
+                    condicionados”, diz Ana Cláudia. Para a socióloga, esse processo cria o efeito de bolhas, resultando
+                    na cristalização e fortalecimento das ideias que os indivíduos já possuem.</p>
+                <div class="video-solo">
+                    <iframe 
+                        src="https://www.youtube.com/embed/V1VmGoA2goY?&rel=0&modestbranding=1" ></iframe>
+                </div>
+            </div>
+        </article>
+
+    </main>
+    <footer id="footer">
+        <section class="body-footer">
+            <div class="info-footer">
+                <h3 class="title-footer">Insatisfeitos, conectados e divididos: por dentro da polarização</h3>
+                <p class="p-footer">Reportagem e infografia: Ester Santana, Lucas Campêlo, Letícia Remonte, Stephanie
+                    Fazio e Tifany Kimura</p>
+                <p class="p-footer">Orientador: Bernardo Queiroz</p>
+                <p class="p-footer">Coordenador de Curso: Max Milliano Melo</p>
+                <p class="p-footer">Site desenvolvido por: Andreza Lima</p>
+                <br>
+                <p class="p-footer">Essa reportagem é parte integrante dos requisitos do trabalho de conclusão de curso
+                    (TCC) do 8° semestre do curso de jornalismo da Universidade Anhembi Morumbi.</p>
+            </div>
+            <div class="info-footer">
+                <!-- <a class="info-a" href="quemSomos.html">Quem Somos</a> -->
+                <img src="./img/logo.png" alt="">
+            </div>
+        </section>
+        <section class="footer-footer">
+            <p> Copyright © 2020 Agência Jornalística Prisma</p>
+        </section>
+    </footer>
+    <script src="./Js/efeitoTitulo.js"></script>
+    <script src="./Js/graficos.js"></script>
+    <script src="./Js/graps-ste1.js"></script>
+    <script src="./Js/miniMenu.js"></script>
+    <script src="./Js/exibirMenu.js"></script>
+    <script src="./Js/graps-let.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
